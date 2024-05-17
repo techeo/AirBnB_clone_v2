@@ -11,12 +11,12 @@ def hello():
 
 
 @app.route('/hbnb', strict_slashes=False)
-def hbnb():
+def hello_hbnb():
     return 'HBNB'
 
 
 @app.route('/c/<text>', strict_slashes=False)
-def c(text):
+def hello_c(text):
     return 'C {}'.format(text.replace("_"," "))
 
 
